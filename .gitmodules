@@ -1,0 +1,6 @@
+[submodule "themes/ananke"]
+	path = themes/ananke
+	url = https://github.com/budparr/gohugo-theme-ananke.git
+[submodule "themes/startbootstrap-clean-blog"]
+	path = themes/startbootstrap-clean-blog
+	url = https://github.com/humboldtux/startbootstrap-clean-blog.git
