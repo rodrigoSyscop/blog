@@ -1,3 +1,32 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL = "https://rodrigodelimavieira.com/"
+languageCode = "pt-br"
+title = "Rodrigo Vieira"
+theme = "ananke"
+
+disqusShortname = "YourDisqusShortname" #delete or comment to disable Disqus comments
+
+[params]
+  body_classes = "avenir bg-near-white"
+  showReadTime = true
+
+[author]
+  name = "Rodrigo Vieira"
+
+[[params.social]]
+  title = "twitter"
+  url = "https://twitter.com/rodrigoSyscop"
+[[params.social]]
+  title = "github"
+  url = "https://github.com/rodrigoSyscop"
+[[params.social]]
+  title = "facebook"
+  url = "https://www.facebook.com/rodrigodelimavieira"
+
+[[menu.main]]
+  name = "HOME"
+  url = "/"
+  weight = -200
+[[menu.main]]
+  name = "POSTS"
+  url = "/posts/"
+  weight = -180
