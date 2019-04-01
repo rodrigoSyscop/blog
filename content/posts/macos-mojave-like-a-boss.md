@@ -74,6 +74,8 @@ Outro aplicativo que uso bastante é o [trello](https://trello.com), que não es
 
 ```bash
 brew install mas
+# Talvez seja necessário fazer login na appstore
+mas signin mas@example.com
 # busca por apps com "trello" no nome
 mas search trello
 # instala o trello através do seu id 
