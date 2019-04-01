@@ -30,3 +30,20 @@ mkdir -p /etc/httpd/vhosts.d
 	#CustomLog /var/www/html/transapi/logs/access.log combined
 </VirtualHost>
 ```
+
+```bash
+yum install -y mod_ssl
+openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/certs/transapi.key -out /etc/ssl/certs/transapi.crt
+```
+
+```
+<VirtualHost *:443>
+	ServerName www.transapi.com
+	ServerAlias www
+    SSLEngine on
+    SSLCertificateFile /etc/ssl/certs/transapi.crt
+    SSLCertificateKeyFile /etc/ssl/certs/transapi.key
+	DocumentRoot /var/www/html/transapi
+	#ErrorLog /var/www/html/transapi/logs/error.log
+	#CustomLog /var/www/html/transapi/logs/access.log combined
+</VirtualHost>
