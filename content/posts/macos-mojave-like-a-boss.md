@@ -70,6 +70,18 @@ brew cask install firefox google-chrome
 brew cask install kindle authy itsycal
 ```
 
+Outro aplicativo que uso bastante é o [trello](https://trello.com), que não está mais disponível através do brew. No entanto, existe uma ferramenta CLI chamada [mas](https://github.com/mas-cli/mas) que pode ser utilizada para instalar aplicativos da Mac App Store via linha de comando:
+
+```bash
+brew install mas
+# busca por apps com "trello" no nome
+mas search trello
+# instala o trello através do seu id 
+mas install 1278508951
+```
+
+Para maiores informações sobre o **mas** consulte a página do projeto em [https://github.com/mas-cli/mas](https://github.com/mas-cli/mas).
+
 ## Bash Completions
 
 Você deve ter reparado que após instalar certos aplicativos pelo `brew` ele exibe a seguinte mensagem:
