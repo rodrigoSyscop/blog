@@ -21,3 +21,12 @@ IncludeOptional vhosts.d/*.conf
 ```bash
 mkdir -p /etc/httpd/vhosts.d
 ```
+```
+<VirtualHost *:80>
+	ServerName www.transapi.com
+	ServerAlias www
+	DocumentRoot /var/www/html/transapi
+	#ErrorLog /var/www/html/transapi/logs/error.log
+	#CustomLog /var/www/html/transapi/logs/access.log combined
+</VirtualHost>
+```
